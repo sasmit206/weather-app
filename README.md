@@ -13,6 +13,7 @@ Clean and responsive UI
 API key securely handled (not exposed in the repository)
 
 *Tech Stack*
+
 Frontend
 
 HTML – Structure of the application
