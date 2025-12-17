@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.weatherForm {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.cityInput {
+    padding: 14px 18px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+    max-width: 90%;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cityInput:focus {
+    border: 2px solid #0077ff;
+    box-shadow: 0 0 0 4px rgba(0, 119, 255, 0.2);
+}
+
+button[type="submit"] {
+    padding: 14px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #005ec2;
+    transform: scale(1.1);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.8);
+}
+
+.weatherCard {
+    background: linear-gradient(135deg, #1e90ffcc, #ffb347cc);
+    backdrop-filter: blur(6px);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    min-width: 300px;
+}
+
+
+.errorDisplay {
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
